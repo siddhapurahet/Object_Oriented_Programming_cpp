@@ -1,6 +1,7 @@
 /*
 
 => Objects : Objects are entities in real world.
+
 => Class : Class is like a blueprint or can also be called as group of object.
            Whenever making a class, give name of class as the entity for which you are creating class.
            Ex: For creating database of teachers, give class name as Teacher.

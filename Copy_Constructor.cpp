@@ -55,10 +55,10 @@ public:
 
 // ----------------------------------------------------
 
-class Student // This Student class highlights the problem of shallow copy where in first s1 object values are created and copied into s2 object, then cgpa value of s2 object is changed and s1 object is printed but surprisingly the cgpa of s1 object is also changed which should not because we changed cgpa value for s2 and not s1. The reason is shallow copy because the memory allocated to cgpa for both object were different but the address was not so both were pointing to the same memory address. To understand better, try running the code.
-{
-
-public:
+class Student // The Student class highlights the problem of shallow copy where in first s1 object values are created and copied into
+{             // s2 object, then cgpa value of s2 object is changed and s1 object is printed but surprisingly the cgpa of s1 object is
+              // also changed which should not because we changed cgpa value for s2 and not s1. The reason is shallow copy because the
+public:       // memory allocated to cgpa for both object were different but the address was not, so both were pointing to the same memory address. To understand better, try running the code.
     Student(string name, double cgpaPtr)
     {
         this->name = name;

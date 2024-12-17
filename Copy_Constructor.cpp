@@ -73,6 +73,12 @@ public:       // memory allocated to cgpa for both object were different but the
         this->cgpa = copyConstobj.cgpa;
     }
 
+    ~Student()
+    {
+        cout << "Destructor called..." << endl;
+        delete cgpa;
+    }
+
 public:
     string name;
     double *cgpa;
@@ -111,6 +117,12 @@ public:
         cout << "Value of *cgpa in copy constructor" << *cgpa << endl;
     }
 
+    ~StudentDeepCopyExample()
+    {
+        cout << "Destructor called..." << endl;
+        delete cgpa;
+    }
+
 public:
     string name;
     double *cgpa;
@@ -143,9 +155,9 @@ int main()
     Student st1("Het", 9.0);
     st1.getInfo();
 
-    Student s2(st1);
-    s2.name = "Harsh";
-    *(s2.cgpa) = 10.0;
+    Student st2(st1);
+    st2.name = "Harsh";
+    *(st2.cgpa) = 10.0;
 
     st1.getInfo();
 

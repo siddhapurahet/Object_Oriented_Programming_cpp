@@ -19,8 +19,8 @@
    - Memory allocation happens when constructor is called.
    - Constructor is always made public because it has to call the main function.
    - They are of two types:
-      - Parameterized
-      - Non-parameterized.
+      - Parameterized (this is not called automatically, user has to call it).
+      - Non-parameterized (this is called automatically by compiler).
    - One class can have more than one constructor but should have different parameters. And this is called Constructor Overloading.
 
 */
